@@ -1,0 +1,72 @@
+{
+    "info": {
+        "name": "Kolleno Challenge API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create URL Analysis",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:8000/api/urls/",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8000",
+                    "path": ["api", "urls"]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": {
+                        "url": "https://www.example.com"
+                    }
+                }
+            }
+        },
+        {
+            "name": "List All URLs",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/urls/",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8000",
+                    "path": ["api", "urls"]
+                }
+            }
+        },
+        {
+            "name": "Get Single URL",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/urls/1/",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8000",
+                    "path": ["api", "urls", "1"]
+                }
+            }
+        },
+        {
+            "name": "Delete URL",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/api/urls/1/",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8000",
+                    "path": ["api", "urls", "1"]
+                }
+            }
+        }
+    ]
+}
