@@ -18,36 +18,37 @@ A Django REST API that provides URL analysis and currency conversion services.
 ## Setup
 
 1. Create virtual environment:
-python -m venv venv
-source venv/bin/activate
+	python -m venv venv
+	source venv/bin/activate
 
 2. Install dependencies:
-pip install -r requirements.txt
+	pip install -r requirements.txt
 
 3. Run migrations:
-python manage.py makemigrations
-python manage.py migrate
+	python manage.py makemigrations
+	python manage.py migrate
 
 4. Run server:
-python manage.py runserver
+	python manage.py runserver
 
 
 ## API Endpoints
 ### URL Analysis
-POST /api/urls/ - Create new URL analysis
-GET /api/urls/ - List all analyzed URLs
-GET /api/urls/{id}/ - Get specific URL analysis
-DELETE /api/urls/{id}/ - Delete URL analysis
+	POST /api/urls/ - Create new URL analysis
+	GET /api/urls/ - List all analyzed URLs
+	GET /api/urls/{id}/ - Get specific URL analysis
+	DELETE /api/urls/{id}/ - Delete URL analysis
+
 ### Currency Data
-GET /api/currency-data/ - Get current Bitcoin and EUR/GBP rates
+	GET /api/currency-data/ - Get current Bitcoin and EUR/GBP rates
 
 ## Technologies
-Python 3.11+
-Django
-Django REST Framework
-BeautifulSoup4
-Requests
+	Python 3.11+
+	Django
+	Django REST Framework
+	BeautifulSoup4
+	Requests
 
 ## Resources
-ECB API: https://data.ecb.europa.eu/help/api/overview
-Bitcoin API: https://www.blockchain.com/api/exchange_rates_api
+	ECB API: https://data.ecb.europa.eu/help/api/overview
+	Bitcoin API: https://www.blockchain.com/api/exchange_rates_api
