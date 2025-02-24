@@ -1,1 +1,1 @@
-web: gunicorn kolleno_chalenge.wsgi --log-file -
+web: gunicorn kolleno_challenge.wsgi --log-file -
