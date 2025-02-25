@@ -26,7 +26,7 @@ router.register(r'urls', URLDataViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('api/', include(router.urls), name='url-data'),
     path('api/currency-data/', get_currency_data, name='currency-data'),
 ]
 
