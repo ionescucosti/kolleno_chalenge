@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)**4yrp54k_3qyxh_xp90lmbvdittb=@ehq94&7fh$+7$sogb=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.elasticbeanstalk.com', 'localhost']
+ALLOWED_HOSTS = ['kolleno-env.eba-zkzafjcb.us-west-2.elasticbeanstalk.com', 'localhost', '127.0.0.1', '0.0.0.0']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
